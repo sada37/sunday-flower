@@ -1,0 +1,14 @@
+@use "../global" as *;
+
+/*---------------------
+utility/utility
+--------------------*/
+/* テキストの改行目的で使用。改行したいテキストをspanタグで囲む。画面幅によって改行したくないなどの場合は親要素のクラスと一緒に命名し上書きする
+（.text .u-line-break: display: inline;等）*/
+.u-line-break {
+  display: block;
+}
+
+.u-link-cancel {
+  pointer-events: none;
+}

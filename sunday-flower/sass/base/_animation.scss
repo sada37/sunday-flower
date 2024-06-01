@@ -1,0 +1,43 @@
+@use "../global" as *;
+
+/* --------------------
+base/animation
+---------------------*/
+/* top-service__gallery */
+@keyframes rightShift {
+  0% {
+    translate: 0 0;
+  }
+  100% {
+    translate: calc(-1 * (500% + (32px * 5))) 0;
+  }
+}
+
+@keyframes leftShift {
+  0% {
+    translate: calc(-1 *(500% + (32px * 5))) 0;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+/* c-shape-text-circle */
+@keyframes spin {
+  0%{
+    rotate: 0;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+
+/* slide-text */
+@keyframes textSlides {
+  0%{
+    translate: 0 0;
+  }
+  100%{
+    translate: calc(-1em * 6.2)  0;
+  }
+}

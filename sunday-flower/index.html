@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sunday flower-幸せを届けるお花屋さん-</title>
+    <meta
+      name="description"
+      content="sunday flowerは東京駅から徒歩4分のところにあるお花屋さんです。「日曜日のような幸せな気持ちをお客様に届ける」をコンセプトに日々取り組んでいます。"
+    />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png" />
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="sundayflower" />
+    <meta property="og:url" content="https://intp.site/2030/sunday-flower/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="sunday flower-幸せを届けるお花屋さん-" />
+    <meta
+      property="og:description"
+      content="sunday flowerは東京駅から徒歩4分のところにあるお花屋さんです。「日曜日のような幸せな気持ちをお客様に届ける」をコンセプトに日々取り組んでいます。"
+    />
+    <meta property="og:image" content="ogp.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- adobe font Mrs Eaves Roman Lining -->
+    <link rel="stylesheet" href="https://use.typekit.net/myq5rbk.css" />
+
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/top.js" defer></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="b-loading-animation">
+      <img src="images/logo.svg" alt="sunday flower" width="250" height="35" />
+    </div>
+    <header>
+      <div class="header__inner">
+        <h1 class="header__title">
+          <a href="index.html">
+            <img
+              src="images/logo.svg"
+              alt="サンデイフラワーのホームページへようこそ"
+              width="250"
+              height="35"
+            />
+          </a>
+        </h1>
+        <!-- gnav -->
+        <div class="gnav-bg">
+          <nav class="gnav">
+            <ul class="gnav__list">
+              <li class="gnav__item">
+                <a class="gnav__link" href="service.html">サービス</a>
+              </li>
+              <li class="gnav__item">
+                <a class="gnav__link" href="#">お知らせ</a>
+              </li>
+              <li class="gnav__item">
+                <a class="gnav__link" href="#">店舗案内</a>
+              </li>
+              <li class="gnav__item">
+                <a class="gnav__link" href="#">お問い合わせ</a>
+              </li>
+              <li class="gnav__item">
+                <a class="gnav__link c-button -primary" href="#"
+                  >オンラインショップ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- end gnav -->
+        <!-- gnav-button -->
+        <button class="gnav__button">
+          <div class="gnav__button__icon">
+            <span class="icon-line icon-line__top"></span>
+            <span class="icon-line icon-line__middle"></span>
+            <span class="icon-line icon-line__bottom"></span>
+            <span class="gnav__button__text">メニュー</span>
+          </div>
+        </button>
+        <!-- end gnav-button -->
+      </div>
+      <!-- end header-layout -->
+    </header>
+    <!-- first-view -->
+    <div class="first-view">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="images/first-view_sp.avif"
+          type="image/avif"
+        />
+        <source media="(max-width: 767px)" srcset="images/first-view_sp.jpg" />
+        <source
+          media="(min-width: 768px)"
+          srcset="images/first-view.avif"
+          type="image/avif"
+        />
+        <img
+          class="first-view__img"
+          src="images/first-view.jpg"
+          alt="sundayflowerは幸せを届けるお花屋さんです"
+          width="1920"
+          height="1080"
+        />
+      </picture>
+    </div>
+    <!-- end first-view -->
+    <!-- information -->
+    <div class="information">
+      <div class="information__inner">
+        <div class="information__description">
+          <p class="information__text">東京駅から徒歩4分</p>
+          <p class="information__text">宅配も承っております</p>
+        </div>
+        <address class="information__address">
+          <p class="information__text">
+            営業時間:10:00~17:00<span class="u-line-break"
+              >（祝日以外、年中無休）</span
+            >
+          </p>
+          <p class="information__text">
+            <a class="u-link-cancel">TEL:000-123-4567 mail:abcd@abcd.com</a>
+          </p>
+        </address>
+      </div>
+    </div>
+    <!-- end information -->
+    <!-- main -->
+    <main>
+      <!-- top-about -->
+      <section class="top-about">
+        <picture class="top-about__image">
+          <source
+            media="(max-width: 767px)"
+            srcset="images/top-about_sp.avif"
+            type="image/avif"
+          />
+          <source media="(max-width: 767px)" srcset="images/top-about_sp.jpg" />
+          <source
+            media="(min-width: 768px)"
+            srcset="images/top-about.avif"
+            type="image/avif"
+          />
+          <img
+            class="top-about__img"
+            src="images/top-about.jpg"
+            alt=""
+            width="1752"
+            height="1013"
+          />
+        </picture>
+        <div class="top-about__description">
+          <h2 class="top-about__title" data-scrollAnime="common">
+            <span class="c-font-english">sunday flower</span>
+            のこと
+          </h2>
+          <p class="top-about__read-text" data-scrollAnime="common">
+            幸せな気持ちを届けたくて、始めました。
+          </p>
+          <p class="top-about__text" data-scrollAnime="common">
+            sunday flowerは、東京駅から徒歩4分のところにあるお花屋さんです。
+          </p>
+          <p class="top-about__text" data-scrollAnime="common">
+            私たちは、
+            <span class="u-line-break"
+              >「お客様に日曜日の楽しさのような、幸せな気持ちを届ける」</span
+            >
+            をコンセプトに日々取り組んでいます。
+          </p>
+          <p class="top-about__text" data-scrollAnime="common">
+            たくさんのお花と幸せがあるsunday
+            flowerにぜひお越しいただけるのをお待ちしております。
+          </p>
+        </div>
+      </section>
+      <!-- end top-about -->
+      <!-- top-service -->
+      <section class="top-service">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="images/section_top_sp.svg"
+          />
+          <img
+            class="c-shape-section"
+            src="images/section_top.svg"
+            alt=""
+            width="1440"
+            height="234"
+          />
+        </picture>
+        <!-- top-service__content -->
+        <div class="top-service__content">
+          <!-- l-container -->
+          <div class="l-container">
+            <div class="c-title-section-wrap">
+              <div class="c-shape-circle -primary"></div>
+              <h2 class="c-title-section -primary">サービス</h2>
+              <img
+                class="c-shape-flower -primary"
+                src="images/flower.svg"
+                alt=""
+                width="154"
+                height="154"
+              />
+            </div>
+            <p class="top-service__description" data-scrollAnime="common">
+              季節のお花、ギフト用から様々なイベントなど用途に合わせて提供しています。
+            </p>
+            <!-- top-service__gallery-wrap -->
+            <div class="top-service__gallery-wrap" data-scrollAnime="common">
+              <!-- top-service__gallery -->
+              <div class="top-service__gallery">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_01.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_01.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_02.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_02.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_03.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_03.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_04.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_04.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_05.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_05.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_01.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_01.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_02.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_02.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_03.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_03.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_04.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_04.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_05.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_05.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+              </div>
+              <!-- end top-service__gallery -->
+              <!-- top-service__gallery -->
+              <div class="top-service__gallery">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_01.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_01.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_02.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_02.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_03.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_03.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_04.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_04.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_05.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_05.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_01.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_01.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_02.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_02.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_03.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_03.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_04.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_04.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="images/service_05.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="top-service__img"
+                    src="images/service_05.jpg"
+                    alt=""
+                    width="288"
+                    height="288"
+                  />
+                </picture>
+              </div>
+              <!-- end top-service__gallery -->
+            </div>
+            <!-- end top-service__gallery-wrap -->
+            <a class="c-button -primary -relative" href="service.html"
+              >サービスを詳しく見る<img
+                class="c-shape-text-circle -absolute"
+                src="images/text-circle.svg"
+                alt=""
+                width="154"
+                height="154"
+            /></a>
+          </div>
+          <!-- end l-container -->
+        </div>
+        <!-- end top-service__content -->
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="images/section_bottom_sp.svg"
+          />
+          <img
+            class="c-shape-section"
+            src="images/section_bottom.svg"
+            alt=""
+            width="1440"
+            height="234"
+          />
+        </picture>
+      </section>
+      <!-- end top-about -->
+      <!-- slide-text -->
+      <div class="slide-text-wrap">
+        <div class="slide-text">
+          sunday flower sunday flower sunday flower sunday flower sunday flower
+          sunday flower sunday flower sunday flower sunday flower sunday flower
+          sunday flower sunday flower sunday flower sunday flower sunday flower
+          sunday flower sunday flower sunday flower sunday flower
+        </div>
+      </div>
+      <!-- end slide-text -->
+      <!-- top-news -->
+      <section class="top-news">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="images/section_top_sp.svg"
+          />
+          <img
+            class="c-shape-section"
+            src="images/section_top.svg"
+            alt=""
+            width="1440"
+            height="234"
+          />
+        </picture>
+        <!-- top-news__inner -->
+        <div class="top-news__inner">
+          <div class="l-container">
+            <div class="c-title-section-wrap">
+              <div class="c-shape-circle -primary"></div>
+              <h2 class="c-title-section -primary">お知らせ</h2>
+              <img
+                class="c-shape-flower -primary"
+                src="images/flower.svg"
+                alt=""
+                width="175"
+                height="168"
+              />
+            </div>
+            <!-- p-news-card-wrap -->
+            <div class="p-news-card-wrap">
+              <article class="p-news-card" data-scrollAnime="common">
+                <a class="p-news-card__link" href="#"></a>
+                <picture class="p-news-card__thumbnail">
+                  <source
+                    media="max-width: 767px"
+                    srcset="images/news_01.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="p-news-card__img"
+                    src="images/news_01.jpg"
+                    alt=""
+                    width="720"
+                    height="720"
+                  />
+                </picture>
+                <div class="p-news-card__date">
+                  <time datetime="2024-02-04">2024.02.04</time>
+                  <span class="p-news-card__category">お知らせ</span>
+                </div>
+                <h3 class="p-news-card__title">
+                  2024年2月オープンしました!たくさんのご来店お待ちしております。
+                </h3>
+              </article>
+
+              <article class="p-news-card" data-scrollAnime="common">
+                <a class="p-news-card__link" href="#"></a>
+                <picture class="p-news-card__thumbnail">
+                  <source
+                    media="max-width: 767px"
+                    srcset="images/news_02.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    class="p-news-card__img"
+                    src="images/news_02.jpg"
+                    alt=""
+                    width="720"
+                    height="720"
+                  />
+                </picture>
+                <div class="p-news-card__date">
+                  <time datetime="2024-02-04">2024.02.04</time>
+                  <span class="p-news-card__category">イベント</span>
+                </div>
+                <h3 class="p-news-card__title">
+                  オープンキャンペーン開催中です。
+                </h3>
+              </article>
+
+              <article class="p-news-card" data-scrollAnime="common">
+                <a class="p-news-card__link" href="#"></a>
+                <div class="p-news-card__thumbnail">
+                  <img
+                    class="p-news-card__img"
+                    src="images/news_03.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="p-news-card__date">
+                  <time datetime="2024-02-04">2024.02.29</time>
+                  <span class="p-news-card__category">営業時間</span>
+                </div>
+                <h3 class="p-news-card__title">3月も通常通り営業予定です。</h3>
+              </article>
+
+              <article class="p-news-card" data-scrollAnime="common">
+                <a class="p-news-card__link" href="#"></a>
+                <picture class="p-news-card__thumbnail">
+                  <source
+                    media="max-width: 767px"
+                    srcset="images/news_04.avif"
+                  />
+                  <img
+                    class="p-news-card__img"
+                    src="images/news_04.jpg"
+                    alt=""
+                    width="720"
+                    height="720"
+                  />
+                </picture>
+                <div class="p-news-card__date">
+                  <time datetime="2024-02-04">2024.03.14</time>
+                  <span class="p-news-card__category">イベント</span>
+                </div>
+                <h3 class="p-news-card__title">ホワイトデーイベント実施中！</h3>
+              </article>
+            </div>
+            <!-- end p-news-card-wrap -->
+            <a class="c-button -primary -relative" href="#"
+              >お知らせを詳しく見る<img
+                class="c-shape-text-circle -absolute"
+                src="images/text-circle.svg"
+                alt=""
+                width="154"
+                height="154"
+            /></a>
+          </div>
+        </div>
+        <!-- end top-news__inner -->
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="images/section_bottom_sp.svg"
+          />
+          <img
+            class="c-shape-section"
+            src="images/section_bottom.svg"
+            alt=""
+            width="1440"
+            height="234"
+          />
+        </picture>
+      </section>
+      <!-- end top-news -->
+      <!-- top-access -->
+      <section class="top-access">
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="images/section_top_sp.svg"
+          />
+          <img
+            class="c-shape-section"
+            src="images/section_top.svg"
+            alt=""
+            width="1440"
+            height="234"
+          />
+        </picture>
+        <!-- top-access__inner -->
+        <div class="top-access__inner">
+          <div class="l-container">
+            <div class="c-title-section-wrap">
+              <div class="c-shape-circle -primary"></div>
+              <h2 class="c-title-section -primary">店舗案内</h2>
+              <img
+                class="c-shape-flower -primary"
+                src="images/flower.svg"
+                alt=""
+                width="175"
+                height="168"
+              />
+            </div>
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="images/access_01_sp.avif"
+                type="image/avif"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="images/access_01_sp.jpg"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="images/access_01.avif"
+                type="image/avif"
+              />
+              <img
+                class="top-access__img"
+                data-scrollAnime="common"
+                src="images/access_01.jpg"
+                alt="店舗内の様子"
+                width="1920"
+                height="1292"
+              />
+            </picture>
+            <div class="top-access__content">
+              <iframe
+                class="top-access__map"
+                data-scrollAnime="common"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5450.389887902901!2d139.76252366474753!3d35.681403925484005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1712535305259!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+
+              <address class="top-access__address" data-scrollAnime="common">
+                <img
+                  class="top-access__logo"
+                  src="images/logo.svg"
+                  alt="sunday flower"
+                />
+                <p>
+                  営業時間:10:00~17:00<span class="u-line-break"
+                    >(祝日以外、年中無休)</span
+                  >
+                </p>
+                <p>〒000-0000 東京都○○区○○町45</p>
+                <p><a class="u-link-cancel">TEL:00-1234-4567</a></p>
+                <p><a class="u-link-cancel">mail:abcd@abcd.com</a></p>
+              </address>
+            </div>
+
+            <div class="top-access__sub-infomation">
+              <p
+                class="top-access__sub-infomation-text"
+                data-scrollAnime="common"
+              >
+                オンラインショップにてネット注文も承ってます。
+              </p>
+              <a class="c-button -primary" href="#">オンラインショップ</a>
+            </div>
+          </div>
+        </div>
+        <!-- end top-access__inner -->
+        <picture>
+          <source
+            media="(max-width: 767px)"
+            srcset="images/section_bottom_sp.svg"
+          />
+          <img
+            class="c-shape-section"
+            src="images/section_bottom.svg"
+            alt=""
+            width="1440"
+            height="234"
+          />
+        </picture>
+      </section>
+      <!-- end top-access -->
+      <!-- slide-text -->
+      <div class="slide-text-wrap">
+        <div class="slide-text">
+          sunday flower sunday flower sunday flower sunday flower sunday flower
+          sunday flower sunday flower sunday flower sunday flower sunday flower
+          sunday flower sunday flower sunday flower sunday flower sunday flower
+          sunday flower sunday flower sunday flower sunday flower
+        </div>
+      </div>
+      <!-- end slide-text -->
+    </main>
+    <!-- end main -->
+    <!-- footer -->
+    <footer class="footer">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="images/footer_top_sp.svg"
+          type="image/svg+xml"
+        />
+        <img
+          class="footer-top-shape"
+          src="images/footer_top.svg"
+          alt=""
+          width="1440"
+          height="256"
+        />
+      </picture>
+      <div class="footer__inner">
+        <div class="footer__contents">
+          <address class="footer__address">
+            <a href="./"
+              ><img class="footer__logo" src="images/logo_white.svg" alt=""
+            /></a>
+            <p>〒000-0000</p>
+            <p>東京都○○区○○町45</p>
+            <p><a class="u-link-cancel">TEL:00-1234-4567</a></p>
+          </address>
+          <nav class="footer__nav">
+            <ul class="footer__nav__list">
+              <li class="footer__nav__item">
+                <a class="footer__nav__link" href="service.html">サービス</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__nav__link" href="#">お知らせ</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__nav__link" href="#">店舗案内</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__nav__link" href="#">お問い合わせ</a>
+              </li>
+              <li class="footer__nav__item">
+                <a class="footer__nav__link" href="#">オンラインショップ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <small class="copyright">©2024 sunday flower.</small>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- pageTopBtn -->
+    <button class="c-button -page-top" aria-label="トップへ戻る"></button>
+    <!-- end pageTopBtn -->
+  </body>
+</html>

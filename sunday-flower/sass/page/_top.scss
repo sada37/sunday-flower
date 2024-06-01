@@ -1,0 +1,253 @@
+@use "../global" as *;
+
+/*---------------------
+page/top
+--------------------*/
+
+/* ---------- first-view ----------- */
+.first-view__img {
+  object-fit: cover;
+  max-height: 100vh;
+  min-height: 320px;
+  width: 100%;
+}
+
+/* ---------- information ---------- */
+.information {
+  background-color: $accsent-color;
+  color: $text-sub-color;
+  padding: 16px;
+}
+
+.information__inner {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  gap: 16px;
+}
+
+@include mq(sm) {
+  .information {
+    padding: 32px;
+  }
+
+  .information__inner {
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  .information__text .u-line-break {
+    display: inline;
+  }
+}
+
+@include mq(md) {
+  .information__inner {
+    gap: 64px;
+  }
+}
+
+/* ---------------------
+  main 
+---------------------- */
+
+/* ---------- top-about ---------- */
+.top-about {
+  position: relative;
+  color: $base-color;
+  text-align: center;
+}
+
+.top-about__image img {
+  filter: brightness(50%);
+  object-fit: cover;
+  width: 100%;
+  min-height: 600px;
+}
+
+.top-about__description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 90vw;
+  text-shadow: 0 0 4px $text-sub-color;
+}
+
+.top-about__title {
+  font-family: $font-sub;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 5vw, 2rem);
+  margin-bottom: 16px;
+}
+
+.top-about__read-text {
+  font-family: $font-sub;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 5vw, 2.25rem);
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.top-about__text {
+  margin-inline: auto;
+  width: 80%;
+}
+
+.top-about__text:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+@include mq(md) {
+  .top-about__title {
+    margin-bottom: 32px;
+  }
+
+  .top-about__read-text {
+    margin-bottom: 64px;
+  }
+
+  .top-about__text {
+    margin-inline: auto;
+    max-width: 650px;
+    font-size: 1.125rem;
+  }
+
+  .top-about__text:not(:last-of-type) {
+    margin-bottom: 32px;
+  }
+}
+
+/* ---------- top-service ---------- */
+.top-service {
+  @include section-padding();
+}
+
+.top-service__content {
+  background-color: $accsent-color;
+}
+
+.top-service__description {
+  color: $text-sub-color;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  position: relative;
+  @include content-margin-L();
+}
+
+.top-service__gallery-wrap {
+  overflow: hidden;
+  @include content-margin-L();
+}
+
+.top-service__gallery {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(144px, 1fr));
+  gap: 32px;
+  @include mq(md) {
+    grid-template-columns: repeat(10, minmax(288px, 1fr));
+  }
+}
+
+.top-service__gallery:not(last-child) {
+  margin-bottom: 16px;
+  @include mq(md) {
+    margin-bottom: 32px;
+  }
+}
+
+.top-service__gallery:nth-child(1) picture {
+  animation: rightShift 40s linear infinite;
+}
+
+.top-service__gallery:nth-child(2) picture {
+  animation: leftShift 40s linear infinite;
+}
+
+/* slide-text */
+.slide-text-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+.slide-text {
+  animation: textSlides 8s linear infinite;
+  font-family: $font-logo;
+  translate: calc(-1em * 6.2) 0;
+}
+
+/* top-news */
+.top-news {
+  @include section-padding();
+}
+
+.top-news__inner {
+  background-color: $accsent-color;
+}
+
+/* ---------- top-access ---------- */
+.top-access {
+  @include section-padding();
+}
+.top-access__inner {
+  background-color: $accsent-color;
+}
+
+.top-access__img {
+  width: 100%;
+  height: auto;
+  translate: 0 0;
+  margin-inline: auto;
+  max-width: 800px;
+  @include content-margin();
+}
+
+.top-access__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include content-margin();
+  @include mq(md) {
+    flex-direction: row;
+    gap: 64px;
+    justify-content: center;
+  }
+}
+
+.top-access__map {
+  height: 300px;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 32px;
+  translate: 0 0;
+  @include mq(md) {
+    width: 70%;
+    height: 450px;
+  }
+}
+
+.top-access__address {
+  font-size: 1.125rem;
+  @include mq(lg) {
+    font-size: 1.25rem;
+    .u-line-break {
+      display: inline;
+    }
+  }
+}
+
+.top-access__address *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.top-access__sub-infomation-text {
+  background-color: $text-sub-color;
+  color: $base-color;
+  text-align: center;
+  font-size: clamp(1.25rem, 5vw , 2rem);
+  margin-bottom: 16px;
+  padding: 16px;
+  @include mq(md){
+    margin-bottom: 32px;
+  }
+}

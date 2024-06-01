@@ -1,0 +1,15 @@
+@use "../global" as *;
+/* --------------------
+layout/container
+---------------------*/
+
+%container {
+  width: 90vw;
+  margin-inline: auto ;
+}
+
+.l-container {
+  max-width: 1200px;
+  @extend %container;
+}
+

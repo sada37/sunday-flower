@@ -1,0 +1,42 @@
+@use "utility" as *;
+
+$breakpoints: (
+  sm: 600px,
+  md: 870px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+@mixin mq($breakpoint) {
+  @media (min-width:#{map-get($breakpoints,$breakpoint)}) {
+    @content;
+  }
+}
+
+@mixin section-padding() {
+  padding: $section-padding--sp;
+  @include mq(md) {
+    padding: $section-padding;
+  }
+}
+
+@mixin heading-margin() {
+  margin-bottom: $heading-under-margin--sp;
+  @include mq(md) {
+    margin-bottom: $heading-under-margin;
+  }
+}
+
+@mixin content-margin() {
+  margin-bottom: $content-under-margin--sp;
+  @include mq(md) {
+    margin-bottom: $content-under-margin;
+  }
+}
+
+@mixin content-margin-L() {
+  margin-bottom: $content-under-margin--sp-L;
+  @include mq(md) {
+    margin-bottom: $content-under-margin-L;
+  }
+}

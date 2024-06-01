@@ -1,0 +1,46 @@
+@use "../global" as *;
+
+/* --------------------
+base/base
+---------------------*/
+body {
+  font-family: $font-base;
+  font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  color: $main-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.b-loading-animation {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  background-color: $accsent-color;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+
+.b-loading-animation img {
+  max-width: 200px;
+  width: 100%;
+}
+
+@include mq(sm){
+  .b-loading-animation img {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+

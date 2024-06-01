@@ -1,0 +1,9 @@
+@use "../global" as *;
+/*---------------------
+component/font
+--------------------*/
+
+.c-font-english {
+  font-family: $font-logo;
+  font-weight: 400;
+}

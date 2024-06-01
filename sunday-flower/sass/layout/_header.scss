@@ -1,0 +1,148 @@
+@use "../global" as *;
+/* --------------------
+layout/header
+---------------------*/
+
+.header__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: backdrop-filter 0.5s,padding 0.5s;
+  z-index: $z-index--header;
+  @include mq(md){
+    padding: 12px 32px;
+  }
+}
+
+.header__inner.-active {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgb(255, 255, 255,0.3);
+  box-shadow: 0 0 4px #333;
+  padding: 2px 16px;
+  @include mq(md){
+    padding: 8px 32px;
+  }
+}
+
+.header__title img {
+  max-width: 150px;
+  @include mq(md){
+    max-width: 200px;
+  }
+  @include mq(xl){
+    max-width: 250px;
+  }
+}
+
+.gnav-bg {
+  transition-timing-function: ease-out;
+}
+
+.gnav__list {
+  align-items: center;
+  background-color: $accsent-color;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  gap: 32px;
+  height: 100vh;
+  height: 100dvh;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  /* 強めのease-out */
+  transition-timing-function: cubic-bezier(0, -0.01, 0.01, 0.99);
+  width: 70%;
+  @include mq(lg) {
+    background-color: transparent;
+    flex-direction: row;
+    height: auto;
+    transform: translateX(0);
+    position: static;
+    width: 100%;
+  }
+}
+
+.gnav__item:has(.c-button) {
+  width: 90%;
+  @include mq(lg){
+    width: 250px;
+  }
+}
+
+@media (any-hover: hover){
+  .gnav__link:hover {
+    color: $main-color;
+    transition: color 0.2s;
+  }
+}
+
+/* gnav-button */
+.gnav__button {
+  z-index: 1;
+  width: 70px;
+  cursor: pointer;
+  @include mq(lg) {
+    display: none;
+  }
+}
+
+.gnav__button__icon {
+  align-items: center;
+  padding: 6px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon-line {
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background-color: $main-color;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon-line__top--active {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.icon-line__middle--active {
+  background-color: transparent;
+}
+
+.icon-line__bottom--active {
+  transform: translateY(-10px) rotate(45deg);
+}
+
+.gnav__button__text {
+  color: $main-color;
+  display: inline-block;
+}
+
+/* gnav open css*/
+.gnav--active-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gnav__list--active {
+  transform: translateX(0);
+}
+
+
+.scroll-stop {
+  overflow: hidden;
+}
